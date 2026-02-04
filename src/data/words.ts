@@ -148,6 +148,34 @@ const freizeit: Word[] = [
   { word: 'Lebensmittel', article: '', class: '', thema: 'Freizeit' },
 ]
 
+const lernen: Word[] = [{ word: 'Segelkurs', article: '', class: '', thema: 'Lernen' }]
+
+const reisen: Word[] = [
+  { word: 'Hotel', article: '', class: '', thema: 'Reisen' },
+  { word: 'Zug', article: '', class: '', thema: 'Reisen' },
+  { word: 'Berge', article: '', class: '', thema: 'Reisen' },
+  { word: 'Reiseziel', article: '', class: '', thema: 'Reisen' },
+  { word: 'besichtigen', article: '', class: '', thema: 'Reisen' },
+  { word: 'Reisebüro', article: '', class: '', thema: 'Reisen' },
+  { word: 'Essen', article: '', class: '', thema: 'Reisen' },
+  { word: 'langweilig', article: '', class: '', thema: 'Reisen' },
+  { word: 'Ferien', article: '', class: '', thema: 'Reisen' },
+  { word: 'Regenschirm', article: '', class: '', thema: 'Reisen' },
+  { word: 'Reiserführer', article: '', class: '', thema: 'Reisen' },
+  { word: 'übernachten', article: '', class: '', thema: 'Reisen' },
+]
+
+const einkaufen: Word[] = [
+  { word: 'Zeitung', article: '', class: '', thema: 'Einkaufen' },
+  { word: 'Kasse', article: '', class: '', thema: 'Einkaufen' },
+  { word: 'kosten', article: '', class: '', thema: 'Einkaufen' },
+  { word: 'Supermarkt', article: '', class: '', thema: 'Einkaufen' },
+  { word: 'im Online', article: '', class: '', thema: 'Einkaufen' },
+  { word: 'Kleidung', article: '', class: '', thema: 'Einkaufen' },
+  { word: 'Lebensmittel', article: '', class: '', thema: 'Einkaufen' },
+  { word: 'Kleingeld', article: '', class: '', thema: 'Einkaufen' },
+]
+
 const kleidung: Word[] = [
   { word: 'Größe', article: '', class: '', thema: 'Kleidung' },
   { word: 'anziehen', article: '', class: '', thema: 'Kleidung' },
@@ -162,17 +190,6 @@ const kleidung: Word[] = [
   { word: 'anhaben', article: '', class: '', thema: 'Kleidung' },
   { word: 'preiswert', article: '', class: '', thema: 'Kleidung' },
   { word: 'elegant', article: '', class: '', thema: 'Kleidung' },
-]
-
-const einkaufen: Word[] = [
-  { word: 'Zeitung', article: '', class: '', thema: 'Einkaufen' },
-  { word: 'Kasse', article: '', class: '', thema: 'Einkaufen' },
-  { word: 'kosten', article: '', class: '', thema: 'Einkaufen' },
-  { word: 'Supermarkt', article: '', class: '', thema: 'Einkaufen' },
-  { word: 'im Online', article: '', class: '', thema: 'Einkaufen' },
-  { word: 'Kleidung', article: '', class: '', thema: 'Einkaufen' },
-  { word: 'Lebensmittel', article: '', class: '', thema: 'Einkaufen' },
-  { word: 'Kleingeld', article: '', class: '', thema: 'Einkaufen' },
 ]
 
 const gesundheit: Word[] = [
@@ -194,6 +211,9 @@ export const words: Word[] = [
   ...wohnen,
   ...schule,
   ...freizeit,
+  ...lernen,
+  ...reisen,
+  ...einkaufen,
   ...kleidung,
   ...gesundheit,
 ]
