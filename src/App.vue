@@ -1,38 +1,39 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { words } from '@/data/words'
+import { cards } from '@/data/cards'
 
 function getRandomInt(max: number): number {
   return Math.floor(Math.random() * (max + 1))
 }
 
-const shownWordIndex = ref<null | number>(null)
+const shownCardIndex = ref<null | number>(null)
 
 function handleRandom() {
-  shownWordIndex.value = getRandomInt(words.length - 1)
+  shownCardIndex.value = getRandomInt(cards.length - 1)
 }
 
-const shownWord = computed(() => {
-  const index = shownWordIndex.value
-
+const shownCard = computed(() => {
+  const index = shownCardIndex.value
   if (index === null) return null
-  return words[index]
+  return cards[index]
 })
 </script>
 
 <template>
   <main>
     <div>
-      <div class="card">
-        <div class="card-thema">Thema: {{ shownWord?.thema || '?' }}</div>
-        <div class="card-word">
-          <span :title="shownWord?.article || ''">
-            {{ shownWord?.word || '?' }}
-          </span>
+      <template v-if="shownCard?.type === 'word'">
+        <div class="word-card">
+          <div class="word-card-thema">{{ shownCard.data.thema }}</div>
+          <div class="word-card-word">
+            <span :title="shownCard.data.article || ''">{{ shownCard.data.word_de }}</span>
+          </div>
         </div>
-      </div>
+      </template>
+      <!-- <template v-else> ? </template> -->
+
       <div class="actions">
-        <button @click="handleRandom()">randomize</button>
+        <button @click="handleRandom()">random</button>
       </div>
     </div>
   </main>
@@ -45,21 +46,21 @@ main {
   min-height: 100vh;
 }
 
-.card {
+.word-card {
   max-width: calc(100vw - 16px);
   width: 400px;
   border: 1px solid black;
   margin-bottom: 32px;
 }
 
-.card-thema {
+.word-card-thema {
   border-bottom: 1px solid black;
   text-align: center;
   padding: 8px;
   font-size: large;
 }
 
-.card-word {
+.word-card-word {
   text-align: center;
   font-size: xx-large;
   padding: 48px 8px;
