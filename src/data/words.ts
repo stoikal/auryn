@@ -148,6 +148,44 @@ const freizeit: Word[] = [
   { word: 'Lebensmittel', article: '', class: '', thema: 'Freizeit' },
 ]
 
+const kleidung: Word[] = [
+  { word: 'Größe', article: '', class: '', thema: 'Kleidung' },
+  { word: 'anziehen', article: '', class: '', thema: 'Kleidung' },
+  { word: 'einkeufen', article: '', class: '', thema: 'Kleidung' },
+  { word: 'Anzug', article: '', class: '', thema: 'Kleidung' },
+  { word: 'kosten', article: '', class: '', thema: 'Kleidung' },
+  { word: 'Umkleidekabine', article: '', class: '', thema: 'Kleidung' },
+  { word: 'zu Hause', article: '', class: '', thema: 'Kleidung' },
+  { word: 'anprobieren', article: '', class: '', thema: 'Kleidung' },
+  { word: 'grün', article: '', class: '', thema: 'Kleidung' },
+  { word: 'altmodisch', article: '', class: '', thema: 'Kleidung' },
+  { word: 'anhaben', article: '', class: '', thema: 'Kleidung' },
+  { word: 'preiswert', article: '', class: '', thema: 'Kleidung' },
+  { word: 'elegant', article: '', class: '', thema: 'Kleidung' },
+]
+
+const einkaufen: Word[] = [
+  { word: 'Zeitung', article: '', class: '', thema: 'Einkaufen' },
+  { word: 'Kasse', article: '', class: '', thema: 'Einkaufen' },
+  { word: 'kosten', article: '', class: '', thema: 'Einkaufen' },
+  { word: 'Supermarkt', article: '', class: '', thema: 'Einkaufen' },
+  { word: 'im Online', article: '', class: '', thema: 'Einkaufen' },
+  { word: 'Kleidung', article: '', class: '', thema: 'Einkaufen' },
+  { word: 'Lebensmittel', article: '', class: '', thema: 'Einkaufen' },
+  { word: 'Kleingeld', article: '', class: '', thema: 'Einkaufen' },
+]
+
+const gesundheit: Word[] = [
+  { word: 'gesund', article: '', class: '', thema: 'Gesundheit' },
+  { word: 'Sport', article: '', class: '', thema: 'Gesundheit' },
+  { word: 'Stress', article: '', class: '', thema: 'Gesundheit' },
+  { word: 'Bauchschmerzen', article: '', class: '', thema: 'Gesundheit' },
+  { word: 'Krankenversicherung', article: '', class: '', thema: 'Gesundheit' },
+  { word: 'Tablette', article: '', class: '', thema: 'Gesundheit' },
+  { word: 'besuchen', article: '', class: '', thema: 'Gesundheit' },
+  { word: 'nehmen', article: '', class: '', thema: 'Gesundheit' },
+]
+
 export const words: Word[] = [
   ...sichVorstellen,
   ...cafe,
@@ -156,4 +194,6 @@ export const words: Word[] = [
   ...wohnen,
   ...schule,
   ...freizeit,
+  ...kleidung,
+  ...gesundheit,
 ]
