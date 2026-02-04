@@ -116,4 +116,8 @@ main {
 .actions button:hover {
   background-color: deepskyblue;
 }
+
+.actions button:active {
+  background-color: skyblue;
+}
 </style>
