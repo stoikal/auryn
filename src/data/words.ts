@@ -65,6 +65,37 @@ const städteLänder: Word[] = [
   { word: 'kommen', article: '', class: '', thema: 'Städte - Länder' },
   { word: 'kennen', article: '', class: '', thema: 'Städte - Länder' },
   { word: 'Haupstadt', article: '', class: '', thema: 'Städte - Länder' },
+  { word: 'Westen', article: '', class: '', thema: 'Städte - Länder' },
+  { word: 'nördlich', article: '', class: '', thema: 'Städte - Länder' },
+  { word: 'südlich', article: '', class: '', thema: 'Städte - Länder' },
+  { word: 'südwestlich', article: '', class: '', thema: 'Städte - Länder' },
+  { word: 'Osten', article: '', class: '', thema: 'Städte - Länder' },
 ]
 
-export const words: Word[] = [...sichVorstellen, ...cafe, ...imSprachkurs, ...städteLänder]
+const wohnen: Word[] = [
+  { word: 'Adresse', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Hausnummer', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Balkon', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Nachbar/-in', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Garten', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Miete', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Party', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Wohnfläche', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Zentrum', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Familie', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Zimmer', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Stock', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Küche', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Kühlschrank', article: '', class: '', thema: 'Wohnen' },
+  { word: 'hell', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Postleitzahl', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Spielplatz', article: '', class: '', thema: 'Wochenende' },
+]
+
+export const words: Word[] = [
+  ...sichVorstellen,
+  ...cafe,
+  ...imSprachkurs,
+  ...städteLänder,
+  ...wohnen,
+]

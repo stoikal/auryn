@@ -16,7 +16,7 @@ const shownWord = computed(() => {
   const index = shownWordIndex.value
 
   if (index === null) return null
-  return words[shownWordIndex.value]
+  return words[index]
 })
 </script>
 
@@ -51,11 +51,12 @@ main {
   border-bottom: 1px solid black;
   text-align: center;
   padding: 8px;
+  font-size: large;
 }
 
 .card-word {
   text-align: center;
-  font-size: x-large;
+  font-size: xx-large;
   padding: 48px 8px;
 }
 
