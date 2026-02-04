@@ -30,6 +30,12 @@ const shownCard = computed(() => {
           </div>
         </div>
       </template>
+
+      <template v-else-if="shownCard?.type === 'question'">
+        <div class="question-card">
+          <p>{{ shownCard.data.question }}</p>
+        </div>
+      </template>
       <!-- <template v-else> ? </template> -->
 
       <div class="actions">
@@ -64,6 +70,16 @@ main {
   text-align: center;
   font-size: xx-large;
   padding: 48px 8px;
+}
+
+.question-card {
+  max-width: calc(100vw - 16px);
+  width: 400px;
+  border: 1px solid black;
+  margin-bottom: 32px;
+  padding: 8px;
+  text-align: center;
+  font-size: x-large;
 }
 
 .actions {
