@@ -90,6 +90,14 @@ const wohnen: Word[] = [
   { word: 'hell', article: '', class: '', thema: 'Wohnen' },
   { word: 'Postleitzahl', article: '', class: '', thema: 'Wohnen' },
   { word: 'Spielplatz', article: '', class: '', thema: 'Wochenende' },
+  { word: 'Wochenende', article: '', class: '', thema: 'Wochenende' },
+  { word: 'Garten', article: '', class: '', thema: 'Wochenende' },
+  { word: 'Wochenende', article: '', class: '', thema: 'Wochenende' },
+]
+
+const schule: Word[] = [
+  { word: 'Freund/in', article: '', class: '', thema: 'Schule' },
+  { word: 'Lehrer/in', article: '', class: '', thema: 'Schule' },
 ]
 
 export const words: Word[] = [
@@ -98,4 +106,5 @@ export const words: Word[] = [
   ...imSprachkurs,
   ...städteLänder,
   ...wohnen,
+  ...schule,
 ]
