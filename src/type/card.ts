@@ -1,12 +1,10 @@
+import { type Picture } from './picture'
 import { type Word } from './word'
 
 type PictureCard = {
   type: 'picture'
   level: string
-  data: {
-    src: string
-    alt: string
-  }
+  data: Picture
 }
 
 type WordCard = {

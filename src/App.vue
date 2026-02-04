@@ -24,7 +24,7 @@ const shownCard = computed(() => {
     <div>
       <template v-if="shownCard?.type === 'word'">
         <div class="word-card">
-          <div class="word-card-thema">{{ shownCard.data.thema }}</div>
+          <div v-if="shownCard.data.thema" class="word-card-thema">{{ shownCard.data.thema }}</div>
           <div class="word-card-word">
             <span :title="shownCard.data.article || ''">{{ shownCard.data.word_de }}</span>
           </div>
