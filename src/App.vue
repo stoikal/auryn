@@ -13,6 +13,9 @@ function handleRandom() {
 }
 
 const shownWord = computed(() => {
+  const index = shownWordIndex.value
+
+  if (index === null) return null
   return words[shownWordIndex.value]
 })
 </script>
@@ -41,7 +44,7 @@ main {
 .card {
   width: 400px;
   border: 1px solid black;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 .card-thema {
@@ -62,5 +65,6 @@ main {
 
 .actions button {
   cursor: pointer;
+  padding: 8px 16px;
 }
 </style>
