@@ -43,10 +43,10 @@ const shownCard = computed(() => {
         </div>
       </template>
       <!-- <template v-else> ? </template> -->
+    </div>
 
-      <div class="actions">
-        <button @click="handleRandom()">random</button>
-      </div>
+    <div class="actions">
+      <button @click="handleRandom()">random</button>
     </div>
   </main>
 </template>
@@ -62,7 +62,6 @@ main {
   max-width: calc(100vw - 16px);
   width: 400px;
   border: 1px solid black;
-  margin-bottom: 32px;
 }
 
 .word-card-thema {
@@ -100,7 +99,10 @@ main {
 }
 
 .actions {
+  position: fixed;
   text-align: center;
+  bottom: 0;
+  padding: 16px;
 }
 
 .actions button {
