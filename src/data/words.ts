@@ -7,7 +7,7 @@ type Word = {
 
 const sichVorstellen: Word[] = [
   { word: 'Name', article: 'die', class: '', thema: 'Sich vorstellen' },
-  { word: 'Alter', article: 'die', class: '', thema: 'Sich vorstellen' },
+  { word: 'Alter', article: '', class: '', thema: 'Sich vorstellen' },
   { word: 'Telefonnumer', article: 'die', class: '', thema: 'Sich vorstellen' },
   { word: 'E-Mail-Addresse', article: 'die', class: '', thema: 'Sich vorstellen' },
   { word: 'Sprachen', article: 'die', class: '', thema: 'Sich vorstellen' },
@@ -89,10 +89,23 @@ const wohnen: Word[] = [
   { word: 'Kühlschrank', article: '', class: '', thema: 'Wohnen' },
   { word: 'hell', article: '', class: '', thema: 'Wohnen' },
   { word: 'Postleitzahl', article: '', class: '', thema: 'Wohnen' },
-  { word: 'Spielplatz', article: '', class: '', thema: 'Wochenende' },
-  { word: 'Wochenende', article: '', class: '', thema: 'Wochenende' },
-  { word: 'Garten', article: '', class: '', thema: 'Wochenende' },
-  { word: 'Wochenende', article: '', class: '', thema: 'Wochenende' },
+  { word: 'Spielplatz', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Wochenende', article: 'das', class: '', thema: 'Wohnen' },
+  { word: 'Garten', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Fenster', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Großeltern', article: '', class: '', thema: 'Wohnen' },
+  { word: 'aufräumen', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Party', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Wohnfläsche', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Zentrum', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Familie', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Zimmer', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Stock', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Küche', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Kühlschrank', article: '', class: '', thema: 'Wohnen' },
+  { word: 'hell', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Postleitzahl', article: '', class: '', thema: 'Wohnen' },
+  { word: 'Spielplatz', article: '', class: '', thema: 'Wohnen' },
 ]
 
 const schule: Word[] = [

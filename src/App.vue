@@ -25,7 +25,11 @@ const shownWord = computed(() => {
     <div>
       <div class="card">
         <div class="card-thema">Thema: {{ shownWord?.thema || '?' }}</div>
-        <div class="card-word">{{ shownWord?.word || '?' }}</div>
+        <div class="card-word">
+          <span :title="shownWord?.article || ''">
+            {{ shownWord?.word || '?' }}
+          </span>
+        </div>
       </div>
       <div class="actions">
         <button @click="handleRandom()">randomize</button>
