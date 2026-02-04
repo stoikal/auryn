@@ -24,7 +24,9 @@ const shownCard = computed(() => {
     <div>
       <template v-if="shownCard?.type === 'word'">
         <div class="word-card">
-          <div v-if="shownCard.data.thema" class="word-card-thema">{{ shownCard.data.thema }}</div>
+          <div v-if="shownCard.data.thema" class="word-card-thema">
+            Thema: {{ shownCard.data.thema }}
+          </div>
           <div class="word-card-word">
             <span :title="shownCard.data.article || ''">{{ shownCard.data.word_de }}</span>
           </div>
@@ -39,7 +41,7 @@ const shownCard = computed(() => {
 
       <template v-else-if="shownCard?.type === 'emoji'">
         <div class="emoji-card">
-          <p>{{ shownCard.data.emoji }}</p>
+          <p :title="shownCard.data.title || ''">{{ shownCard.data.emoji }}</p>
         </div>
       </template>
       <!-- <template v-else> ? </template> -->

@@ -27,7 +27,7 @@ export const emojis: Emoji[] = [
   { emoji: '🧳' },
   { emoji: '🎟️' },
   { emoji: '🗺️' },
-  { emoji: '🎧' },
+  { emoji: '🎧', title: 'Der Kopfhörer' },
   { emoji: '✈️' },
   { emoji: '🍞' },
   { emoji: '🚭' },
