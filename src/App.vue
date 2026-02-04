@@ -36,6 +36,12 @@ const shownCard = computed(() => {
           <p>{{ shownCard.data.question }}</p>
         </div>
       </template>
+
+      <template v-else-if="shownCard?.type === 'emoji'">
+        <div class="emoji-card">
+          <p>{{ shownCard.data.emoji }}</p>
+        </div>
+      </template>
       <!-- <template v-else> ? </template> -->
 
       <div class="actions">
@@ -80,6 +86,17 @@ main {
   padding: 8px;
   text-align: center;
   font-size: x-large;
+}
+
+.emoji-card {
+  max-width: calc(100vw - 16px);
+  width: 400px;
+  border: 1px solid black;
+  margin-bottom: 32px;
+  padding: 0 8px;
+  text-align: center;
+  font-size: 96px;
+  line-height: 1em;
 }
 
 .actions {

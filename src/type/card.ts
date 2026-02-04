@@ -1,10 +1,10 @@
-import { type Picture } from './picture'
+import { type Emoji } from './emoji'
 import { type Word } from './word'
 
-type PictureCard = {
-  type: 'picture'
+type EmojiCard = {
+  type: 'emoji'
   level: string
-  data: Picture
+  data: Emoji
 }
 
 type WordCard = {
@@ -21,4 +21,4 @@ type QuestionCard = {
   }
 }
 
-export type Card = PictureCard | WordCard | QuestionCard
+export type Card = EmojiCard | WordCard | QuestionCard
