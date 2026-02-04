@@ -102,7 +102,7 @@ main {
   position: fixed;
   text-align: center;
   bottom: 0;
-  padding: 16px;
+  padding: 32px;
 }
 
 .actions button {
