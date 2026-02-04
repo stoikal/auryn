@@ -46,6 +46,7 @@ main {
 }
 
 .card {
+  max-width: calc(100vw - 16px);
   width: 400px;
   border: 1px solid black;
   margin-bottom: 32px;

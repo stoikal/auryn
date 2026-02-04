@@ -111,6 +111,41 @@ const wohnen: Word[] = [
 const schule: Word[] = [
   { word: 'Freund/in', article: '', class: '', thema: 'Schule' },
   { word: 'Lehrer/in', article: '', class: '', thema: 'Schule' },
+  { word: 'Computer', article: '', class: '', thema: 'Schule' },
+  { word: 'Pause', article: '', class: '', thema: 'Schule' },
+  { word: 'Kantine', article: '', class: '', thema: 'Schule' },
+]
+
+const freizeit: Word[] = [
+  { word: 'Beruf', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Arbeitsplatz', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Pause', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Firma', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Computer', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Urlaub', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Kollegen/Kolleginnen', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Arbeitszeit', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Chef/-in', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Gehalt', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Freizeit', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Wochenende', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Abend', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Hobby', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Familie', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Aktivitäten', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Freunde/-in', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Freier Abend', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Ausflug', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Sport', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Fitnesstudio', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Fernsehen', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Zeitschrift', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Training', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Wandern', article: '', class: '', thema: 'Freizeit' },
+  { word: 'ins Kino gehen', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Flöte', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Grillparty', article: '', class: '', thema: 'Freizeit' },
+  { word: 'Lebensmittel', article: '', class: '', thema: 'Freizeit' },
 ]
 
 export const words: Word[] = [
@@ -120,4 +155,5 @@ export const words: Word[] = [
   ...städteLänder,
   ...wohnen,
   ...schule,
+  ...freizeit,
 ]
