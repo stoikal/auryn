@@ -105,6 +105,13 @@ main {
 
 .actions button {
   cursor: pointer;
-  padding: 8px 16px;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: skyblue;
+}
+
+.actions button:hover {
+  background-color: deepskyblue;
 }
 </style>
