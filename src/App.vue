@@ -57,11 +57,11 @@ const shownCard = computed(() => {
 main {
   display: grid;
   place-items: center;
-  min-height: 100vh;
+  min-height: 100svh;
 }
 
 .word-card {
-  max-width: calc(100vw - 16px);
+  max-width: calc(100vw - 32px);
   width: 400px;
   border: 1px solid black;
 }
