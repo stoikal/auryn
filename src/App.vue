@@ -7,8 +7,9 @@ function getRandomInt(max: number): number {
 }
 
 const shownCardIndex = ref<null | number>(null)
+const isLoading = ref(false)
 
-function handleRandom() {
+async function handleRandom() {
   shownCardIndex.value = getRandomInt(cards.length - 1)
 }
 
@@ -48,7 +49,7 @@ const shownCard = computed(() => {
     </div>
 
     <div class="actions">
-      <button @click="handleRandom()">random</button>
+      <button @click="handleRandom()" :disabled="isLoading">random</button>
     </div>
   </main>
 </template>
@@ -120,6 +121,6 @@ main {
 }
 
 .actions button:active {
-  background-color: skyblue;
+  background-color: lightblue;
 }
 </style>
